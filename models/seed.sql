@@ -1,0 +1,14 @@
+INSERT INTO tag  VALUES ("HTML", null);
+INSERT INTO tag VALUES ("CSS", null);
+INSERT INTO tag  VALUES ("Bootstrap", null);
+INSERT INTO tag  VALUES ("Javascript", null);
+INSERT INTO tag  VALUES ("Node", null);
+INSERT INTO tag  VALUES ("Express", null);
+INSERT INTO tag VALUES ("MySQL", null);
+INSERT INTO tag  VALUES ("block elements", 1);
+INSERT INTO tag VALUES ("classes", 2);
+INSERT INTO tag  VALUES ("grid", 3);
+INSERT INTO tag  VALUES ("functions", 4);
+INSERT INTO tag  VALUES ("npm packages", 5);
+INSERT INTO tag  VALUES ("server", 6);
+INSERT INTO tag VALUES ("joins", 7);

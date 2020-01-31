@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Login Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!-- Bulma Version 0.8.x-->
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="app">
+		<section class="hero hero-page">
+			<div class="hero-body has-text-left">
+				<div class="container">
+					<h2 class="title is-3">Sign In or Create an Account</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-half">
+						<h2 class="title is-2">Already a member? Sign in</h2>
+						<form method="POST" name="login" action="https://bulmastyle.com/login">
+							<input type="hidden" name="_token" value="T4VCwf43AZBPk4kKjCXhyb9ejz8lQdABBDB08X0a" />
+
+
+									<div class="field">
+										<label class="label">Email</label>
+										<p class="control has-icons-left has-icons-right">
+											<input class="input userEmail" type="email" name="email" placeholder="Email"
+												value="" required autofocus />
+											<span class="icon is-small is-left">
+												<i class="fa fa-envelope"></i>
+											</span>
+										</p>
+									</div>
+									<div class="field">
+										<label class="label">Password</label>
+										<p class="control has-icons-left">
+											<input class="input userPassword" type="password" name="password"
+												placeholder="Password" required />
+											<span class="icon is-small is-left">
+												<i class="fa fa-lock"></i>
+											</span>
+										</p>
+									</div>
+									<div class="field">
+										<p class="control">
+											<button class="button is-success login">
+												Login
+											</button>
+										</p>
+									</div>
+						</form>
+						<a class="btn btn-link" href="https://bulmastyle.com/password/reset">
+							Forgot Your Password?
+						</a>
+					</div>
+					<div class="column">
+						<h2 class="title is-2">Create a new account</h2>
+						<form method="POST" name="register" action="https://bulmastyle.com/register">
+							<input type="hidden" name="_token" value="T4VCwf43AZBPk4kKjCXhyb9ejz8lQdABBDB08X0a" />
+							<div class="field">
+								<label class="label">Name</label>
+								<p class="control has-icons-left has-icons-right">
+									<input class="input name" type="text" name="name" placeholder="Name" value=""
+										required autofocus />
+									<span class="icon is-small is-left">
+										<i class="fa fa-user"></i>
+									</span>
+								</p>
+							</div>
+
+							<div class="field">
+								<label class="label">Github Username</label>
+								<p class="control has-icons-left has-icons-right">
+									<input class="input github" type="username" name="github"
+										placeholder="Github Username" value="" required autofocus/>
+										</p>
+									</div>
+									
+							<div class="field">
+								<label class="label">Email</label>
+								<p class="control has-icons-left has-icons-right">
+									<input class="input email" type="email" name="email" placeholder="Email" value=""
+										required />
+									<span class="icon is-small is-left">
+										<i class="fa fa-envelope"></i>
+									</span>
+								</p>
+							</div>
+							<div class="field">
+								<label class="label">Password</label>
+								<p class="control has-icons-left">
+									<input class="input password" type="password" name="password" placeholder="Password"
+										required />
+									<span class="icon is-small is-left">
+										<i class="fa fa-lock"></i>
+									</span>
+								</p>
+							</div>
+							<div class="field">
+								<label class="label">Confirm password</label>
+								<p class="control has-icons-left">
+									<input class="input " type="password" name="password_confirmation"
+										placeholder="Confirm password" required />
+									<span class="icon is-small is-left">
+										<i class="fa fa-lock"></i>
+									</span>
+								</p>
+							</div>
+							<div class="field">
+								<label class="label">Sign up for Newsletter?</label>
+								<p class="control has-icons-left">
+									<input class="checkbox" id="newsletter" type="checkbox" name="newsletter" value="1"
+										checked="checked" />
+								</p>
+							</div>
+							<div class="field">
+								<p>
+									By clicking on the "Create your account" button below, you certify that you have
+									read and agree to our <a href="/terms">terms of use</a> and
+									<a href="privacy">privacy policy</a>.
+								</p>
+							</div>
+							<div class="field">
+								<p class="control">
+									<button id="create-account" class="button is-success login">
+										Register
+									</button>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="hero hero-newsletter">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-desktop">
+					<div class="column">
+					</div>
+
+					<div class="column">
+						<div id="messages"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

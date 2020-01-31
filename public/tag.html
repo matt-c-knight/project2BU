@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+  <script src="http://cdn.embed.ly/jquery.embedly-3.0.5.min.js" type="text/javascript"></script>
+  <script src="http://cdn.embed.ly/jquery.preview-0.3.2.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://cdn.embed.ly/jquery.preview-0.3.2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <title>CodeTab Feed</title>
+  <style>
+      .select {
+          margin-left: 200px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+        <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                <img src="https://via.placeholder.com/150" width="112" height="28">
+              </a>
+          
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Navigate
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Sign-in
+                    </a>
+                    <a class="navbar-item">
+                      Create Post
+                    </a>
+                    <a class="navbar-item">
+                      Feed
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Search by Tag
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary">
+                      <strong>Sign up</strong>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns" style="border-bottom: 10px;"></div>
+        </nav>
+        <div class="block">
+            <section class="hero">
+                <div class=" hero-body">
+                  <div class="columns container is-centered">
+                    <div class="column"></div>
+                    <div class="column title" style="text-align: center;">Search By Tag</div>
+                    <div class="column"></div>
+                  </div>
+                </div>
+            </section>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="field">
+                    <label class="label" style="text-align: center;">Tag #1</label>
+                    <p class="control">
+                      <span class="select">
+                        <select>
+                          <option>Select tag</option>
+                          <option>Javascript</option>
+                          <option>Html</option>
+                          <option>CSS</option>
+                          <option>etc...</option>
+                          <!-- add more <option> for all the tag options -->
+                        </select>
+                      </span>
+                    </p>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="field">
+                    <label class="label" style="text-align: center;">Tag #1</label>
+                    <p class="control">
+                      <span class="select">
+                        <select>
+                          <option>Select tag</option>
+                          <option>Javascript</option>
+                          <option>Html</option>
+                          <option>CSS</option>
+                          <option>etc...</option>
+                          <!-- add more <option> for all the tag options -->
+                        </select>
+                      </span>
+                    </p>
+                  </div>
+            </div>
+            
+          </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem quo tempore veritatis necessitatibus.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/tag.js"></script>
+</body>
+</html>
