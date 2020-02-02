@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="http://cdn.embed.ly/jquery.preview-0.3.2.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <link rel="stylesheet" href="./styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel="stylesheet" href="./styles/styles.css" media="screen" title="no title" charset="utf-8"> -->
   <title>CodeTab Feed</title>
 </head>
 <body>
@@ -39,14 +39,14 @@
                     <a class="navbar-item">
                       Sign-in
                     </a>
-                    <a class="navbar-item">
+                    <a href="./create.html" class="navbar-item">
                       Create Post
                     </a>
-                    <a class="navbar-item">
+                    <a href="./feed.html" class="navbar-item">
                       Feed
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item">
+                    <a href="./tags.html" class="navbar-item">
                       Search by Tag
                     </a>
                   </div>
@@ -69,7 +69,7 @@
             <div class="field">
                 <label class="label" style="text-align: center;">Username</label>
                 <p class="control">
-                  <input type="text" class="input" placeholder="Jon ${Doe}" style="width: 128px;height: 40px;">    
+                  <input type="text" class="input name" placeholder="Jon ${Doe}" style="width: 128px;height: 40px;">    
                 </p>
             </div>
         </div>
@@ -78,29 +78,32 @@
                 <label class="label" style="text-align: center;">Tag #1</label>
                 <p class="control">
                   <span class="select">
-                    <select>
+                    <select id="my-select">
                       <option>Select tag</option>
-                      <option>Javascript</option>
-                      <option>Html</option>
-                      <option>CSS</option>
-                      <option>etc...</option>
-                      <!-- add more <option> for all the tag options -->
+                      <option data-tag="1">Html</option>
+                      <option data-tag="2">CSS</option>
+                      <option data-tag="3">Bootstrap</option>
+                      <option data-tag="4">Javascript</option>
+                      <option data-tag="5">Jquery</option>
+                      <option data-tag="6">ES6</option>
+                      <option data-tag="7">Node</option>
+                      <option data-tag="8">Express</option>
+                      <option data-tag="9">Handlebars</option>
+                      <option data-tag="10">MySQL</option>
+                      <option data-tag="11">Sequelize</option>
+                      <option data-tag="12">MongoDB</option>
+                      <option data-tag="13">React</option>
                     </select>
-                  </span>
+                    </span>
                 </p>
               </div>
-              <div class="field">
-                <label class="label" style="text-align: center;">Tag #2</label>
-                <p class="control">
-                  <input type="text" class="input" placeholder="Enter tag" style="width: 128px;height: 40px;">    
-                </p>
-              </div>
+             
             </div>
             <div class="block columns is-centered" style="margin-bottom: 40px;">
                 <div class="field">
                     <label class="label" style="text-align: center;">Enter link</label>
                     <p class="control">
-                      <input id="url" type="text" name="url" class="input" placeholder="https//:www..." style="width: 200px;height: 40px;">    
+                      <input id="url" type="text" name="url" class="input link" placeholder="https//:www..." style="width: 200px;height: 40px;">    
                     </p>
                 </div>
             </div>
@@ -109,7 +112,7 @@
             </div>
             <div class="field columns is-centered" style="margin-bottom: 40px;">
                 <p class="control">
-                    <textarea class="textarea"></textarea>
+                    <textarea class="textarea text"></textarea>
                 </p>
             </div>
             <div class="columns control is-centered">
@@ -128,9 +131,7 @@
                     <div class="column card-footer-item">
                         <div class="button is-white is-fullwidth">${Its a tag}</div>
                     </div>
-                    <div class="column card-footer-item">
-                        <div class="button is-white is-fullwidth">${Its a tag}</div>
-                    </div>
+                    
                 </div>
                 <div class="columns card-content is-centered">
                     <div class="column"></div>
@@ -161,5 +162,8 @@
             </div>
           </footer>
     </div>
+    <script src="./js/create.js">
+    
+    </script>
 </body>
 </html>

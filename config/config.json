@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": "Fordtruck@1!!",
-      "database": "codetab_db",
+      "database": "codetab2_db",
       "host": "localhost",
       "dialect": "mysql"
     },

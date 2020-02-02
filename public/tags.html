@@ -13,7 +13,7 @@
   <title>CodeTab Feed</title>
   <style>
       .select {
-          margin-left: 200px;
+          margin-left: 600px;
       }
   </style>
 </head>
@@ -45,10 +45,10 @@
                     <a class="navbar-item">
                       Sign-in
                     </a>
-                    <a class="navbar-item">
+                    <a href="./create.html" class="navbar-item">
                       Create Post
                     </a>
-                    <a class="navbar-item">
+                    <a href="feed.html" class="navbar-item">
                       Feed
                     </a>
                     <hr class="navbar-divider">
@@ -89,35 +89,28 @@
                     <label class="label" style="text-align: center;">Tag #1</label>
                     <p class="control">
                       <span class="select">
-                        <select>
+                        <select class="my-select">
                           <option>Select tag</option>
-                          <option>Javascript</option>
-                          <option>Html</option>
-                          <option>CSS</option>
-                          <option>etc...</option>
-                          <!-- add more <option> for all the tag options -->
+                          <option data-tag="1">Html</option>
+                          <option data-tag="2">CSS</option>
+                          <option data-tag="3">Bootstrap</option>
+                          <option data-tag="4">Javascript</option>
+                          <option data-tag="5">Jquery</option>
+                          <option data-tag="6">ES6</option>
+                          <option data-tag="7">Node</option>
+                          <option data-tag="8">Express</option>
+                          <option data-tag="9">Handlebars</option>
+                          <option data-tag="10">MySQL</option>
+                          <option data-tag="11">Sequelize</option>
+                          <option data-tag="12">MongoDB</option>
+                          <option data-tag="13">React</option>
+                          
                         </select>
                       </span>
                     </p>
                   </div>
             </div>
-            <div class="column">
-                <div class="field">
-                    <label class="label" style="text-align: center;">Tag #2</label>
-                    <p class="control">
-                      <span class="select">
-                        <select>
-                          <option>Select tag</option>
-                          <option>Javascript</option>
-                          <option>Html</option>
-                          <option>CSS</option>
-                          <option>etc...</option>
-                          <!-- add more <option> for all the tag options -->
-                        </select>
-                      </span>
-                    </p>
-                  </div>
-            </div>
+         
             
           </div>
     <footer class="footer">
