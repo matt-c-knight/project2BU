@@ -13,22 +13,22 @@ module.exports = function(app) {
       res.json(dbPost);
     });
   });
-  app.get("/api/posts/tag", function(req, res) {
-    // var query = {};
-    // if (req.query.author_id) {
-    //   query.AuthorId = req.query.author_id;
-    // }
-    db.Post.findAll({
-      where: query
-    }).then(function(dbPost) {
-      res.json(dbPost);
-    });
-  });
+  // app.get("/api/posts/tag", word, function(req, res) {
+  //   var query = {};
+  //   if (req.query.tagId === ) {
+  //     query;
+  //   }
+  //   db.Post.findAll({
+  //     where: query
+  //   }).then(function(dbPost) {
+  //     res.json(dbPost);
+  //   });
+  // });
 
   app.get("/api/posts/:id", function(req, res) {
     db.Post.findOne({
       where: {
-        id: req.params.id
+        tagId: req.params.id
       }
     }).then(function(dbPost) {
       console.log(dbPost);
