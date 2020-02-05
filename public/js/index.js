@@ -15,12 +15,12 @@ $(document).ready(function () {
       })
     })
   $("#create-account").click(function () {
-      var nameInput = $(".name");
+      var githubInput = $(".github");
       var passwordInput = $(".password");
       var emailInput = $(".email");
       // var githubInput = $(".github");
       var newUser = {
-          username: nameInput.val().trim(),
+          github: githubInput.val().trim(),
           password: passwordInput.val().trim(),
           email: emailInput.val().trim()
       }

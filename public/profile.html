@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./js/profile.js"></script>
+    <link rel="stylesheet" href="./styles/profile_styling.css" media="screen" title="no title" charset="utf-8">
+    <title>GitHub Profile</title>
+    <style>
+        .my-select {
+            margin-left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                
+                <a class="navbar-item" href="#">
+                    <h1>CODE#</h1>
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Navigate
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a href="./create.html" class="navbar-item" href="./create.html">
+                                Create Post
+                            </a>
+                            <a href="./feed.html" class="navbar-item" href="./feed.html">
+                                Feed
+                            </a>
+                            <a href="profile.html" class="navbar-item">
+                                Profiles
+                              </a>
+                            <a href="./tags.html" class="navbar-item">
+                                Search by Tag
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Start of profile page -->
+        <div class="columns">
+            <div class="column">
+                <div class="field">
+                    <label class="label" style="text-align: center;">User Profiles</label>
+                    <p class="control">
+                        <span class="select">
+                            <select class="my-select">
+                                <option>Select User</option>
+
+
+                            </select>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class='section'>
+            <div class='container center' id="append">
+                
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

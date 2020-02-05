@@ -20,7 +20,7 @@ module.exports = function(app) {
   });
 
 
-  app.get("/tag", function(req, res) {
+  app.get("/tags", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/tag.html"));
   });
 
