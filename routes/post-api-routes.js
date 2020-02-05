@@ -32,6 +32,7 @@ module.exports = function (app) {
       req.body.preview = JSON.stringify(preview);
       db.Post.create(req.body).then(function (dbPost) {
         res.json(dbPost);
+        console.log("success")
       });
     });
   });
