@@ -20,7 +20,7 @@ require("./routes/user-api-routes")(app);
 require("./routes/html-routes")(app);
 require("./routes/post-api-routes")(app);
 
-var syncOptions = { force: false };
+var syncOptions = { force: true };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
