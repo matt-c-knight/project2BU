@@ -14,16 +14,21 @@ module.exports = function(app) {
   });
   
   app.get("/stack", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/feed.html"));
+    res.sendFile(path.join(__dirname, "../public/stack.html"));
   });
 
   app.get("/feed", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/feed.html"));
   });
 
+  app.get("/create", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/create.html"));
+  });
+
+
 
   app.get("/tags", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/tag.html"));
+    res.sendFile(path.join(__dirname, "../public/tags.html"));
   });
 
 };
