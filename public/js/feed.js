@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     function getPosts() {
-        $.get("/api/posts")
+        $.get("api/posts")
         .then(function(res){
           for (i = 0; i < res.length; i++)  {
         //   const urlPreview = JSON.parse(res[i].preview);
@@ -15,7 +15,16 @@ $(document).ready(function() {
                         
                       </div>
                   </div>
-                  
+                  <div class="columns card-content is-fullwidth">
+                      <div class="column"></div>
+                      <div class="column is-mobile" id="link-preview">
+                        <!-- this is where we need to append the url previews -->
+                        <div class="card">
+                            // <div clas="columns card-header">
+                            //     <p class="column card-header-title">${res.link}</p>
+                            // </div>
+                        
+                  </div>
                   <div class="columns card-footer"></div>
               </div>
   
