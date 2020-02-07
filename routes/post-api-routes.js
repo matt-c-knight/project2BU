@@ -28,12 +28,12 @@ module.exports = function (app) {
   });
 
   app.post("/api/posts", function (req, res) {
-    linkPreviewGenerator(req.body.link).then(function (preview) {
-      req.body.preview = JSON.stringify(preview);
+    // linkPreviewGenerator(req.body.link).then(function (preview) {
+    //   req.body.preview = JSON.stringify(preview);
       db.Post.create(req.body).then(function (dbPost) {
         res.json(dbPost);
         console.log("success")
-      });
+      // });
     });
   });
 

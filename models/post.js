@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
-    preview: DataTypes.TEXT,
+    // preview: DataTypes.TEXT,
     blurb: {
       type: DataTypes.TEXT,
       allowNull: true,
