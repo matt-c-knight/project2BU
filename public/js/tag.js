@@ -7,7 +7,7 @@ $(document).ready(function () {
         $.get(queryurl, function(res) {
           console.log(res)
           // for (i = 0; i < res.length; i++)  {
-            const urlPreview = JSON.parse(res.preview);
+            // const urlPreview = JSON.parse(res.preview);
             console.log(res)
             $(".feed").append( `<div class="columns block is-bordered" style="margin: 20px;">
             <div class="column card">
@@ -17,22 +17,7 @@ $(document).ready(function () {
                        
                     </div>
                 </div>
-                <div class="columns card-content is-fullwidth">
-                    <div class="column"></div>
-                    <div class="column is-mobile" id="link-preview">
-                      <!-- this is where we need to append the url previews -->
-                      <div class="card">
-                          <div clas="columns card-header">
-                              <p class="column card-header-title">${urlPreview.title}</p>
-                          </div>
-                      <div class="columns card-content">
-                          <div class="column card-image">
-                              <img class="is-square" src="${urlPreview.img}">
-                          </div>
-                      <div class="column card-content">
-                        <p class="">${urlPreview.description}</p>
-                      </div>
-                </div>
+              
                 <div class="columns card-footer"></div>
             </div>
                     </div>

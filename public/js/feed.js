@@ -1,10 +1,10 @@
 $(document).ready(function() {
     
     function getPosts() {
-        $.get("api/posts")
+        $.get("/api/posts")
         .then(function(res){
           for (i = 0; i < res.length; i++)  {
-          const urlPreview = JSON.parse(res[i].preview);
+        //   const urlPreview = JSON.parse(res[i].preview);
           console.log(urlPreview.title);
           $("#post-feed").append(
               `<div class="columns block is-bordered" style="margin: 20px;">
