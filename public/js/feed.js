@@ -1,13 +1,13 @@
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     function getPosts() {
         $.get("api/posts")
-        .then(function(res){
-          for (i = 0; i < res.length; i++)  {
-        //   const urlPreview = JSON.parse(res[i].preview);
-          console.log(urlPreview.title);
-          $("#post-feed").append(
-              `<div class="columns block is-bordered" style="margin: 20px;">
+            .then(function (res) {
+                for (i = 0; i < res.length; i++) {
+                    // const urlPreview = JSON.parse(res[i].preview);
+                    // console.log(urlPreview.title);
+                    $("#post-feed").append(
+                        `<div class="columns block is-bordered" style="margin: 20px;">
               <div class="column card">
                   <div class="columns card-header">
                       <div class="button is-white" id="username" value="${res[i].username}">${res[i].username}</div>
@@ -16,14 +16,7 @@ $(document).ready(function() {
                       </div>
                   </div>
                   <div class="columns card-content is-fullwidth">
-                      <div class="column"></div>
-                      <div class="column is-mobile" id="link-preview">
-                        <!-- this is where we need to append the url previews -->
-                        <div class="card">
-                            // <div clas="columns card-header">
-                            //     <p class="column card-header-title">${res.link}</p>
-                            // </div>
-                        
+                  <iframe width="560" height="315" src="${res[i].link}"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div class="columns card-footer"></div>
               </div>
@@ -40,36 +33,36 @@ $(document).ready(function() {
                   </div>
               </div>
           </div>`
-          );
-        };
+                    );
+                };
 
-    }).then($("#username").click(function (event) {
-        event.preventDefault();
-        let username = $(this).attr("value");
-        console.log(username)
-        let githubUrl = "https://api.github.com/users/" + username;
-        console.log(username);
-        console.log(githubUrl);
-        $.ajax({
-            url: githubUrl,
-            method: 'GET'
-        }).then(function (res) {
-            $('.avatar').attr('src', res.avatar_url);
-            $('.github-username').text(res.login);
-            $('.github-location').text(res.location);
-            $('.github-url').text(res.html_url);
-            $('.github-url').attr('href', res.html_url);
-            $('.bio').text(res.bio);
-            $('.github-repos').text(res.public_repos);
-            $('.github-followers').text(res.followers);
-        });
-        console.log('working');
-        window.location.href = './profile.html';
-    }));
-   
-  };
-  getPosts();
-  
+            }).then($("#username").click(function (event) {
+                event.preventDefault();
+                let username = $(this).attr("value");
+                console.log(username)
+                let githubUrl = "https://api.github.com/users/" + username;
+                console.log(username);
+                console.log(githubUrl);
+                $.ajax({
+                    url: githubUrl,
+                    method: 'GET'
+                }).then(function (res) {
+                    $('.avatar').attr('src', res.avatar_url);
+                    $('.github-username').text(res.login);
+                    $('.github-location').text(res.location);
+                    $('.github-url').text(res.html_url);
+                    $('.github-url').attr('href', res.html_url);
+                    $('.bio').text(res.bio);
+                    $('.github-repos').text(res.public_repos);
+                    $('.github-followers').text(res.followers);
+                });
+                console.log('working');
+                window.location.href = './profile.html';
+            }));
+
+    };
+    getPosts();
+
 
 
 

@@ -10,12 +10,12 @@ $(document).ready(function() {
     $("#submit-post").click(function (event) {
       event.preventDefault();
       console.log(selected)
-      // var nameInput = $(".name").val();
+      var nameInput = $(".name").val();
       var linkInput = $(".link").val().trim();
       var textInput = $(".text").val().trim();
       
           var newPost = {
-            // username: nameInput,
+            username: nameInput,
             link: linkInput,
             blurb: textInput,
             tagId: selected
