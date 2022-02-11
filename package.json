@@ -15,7 +15,7 @@
     "axios": "^0.19.2",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "jquery": "^3.4.1",
     "link-preview-generator": "0.0.3",
     "mymysql": "^0.1.1",
